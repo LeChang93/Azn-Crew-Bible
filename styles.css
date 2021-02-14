@@ -87,10 +87,7 @@ margin-right:10%;
 
 .backgroundTitle{
   padding-top:3rem;
-  padding-bottom: 10rem;
-  background: url("images/background image.png") no-repeat;
-  background-size: cover;
-
+  padding-bottom: 3rem;
 }
 .carousel-container{
   width:30%;
