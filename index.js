@@ -75,15 +75,13 @@ let timer = setInterval(onTick, 100);
 
 function onTick(){
   const span = document.querySelectorAll("span")[char];
-  console.log(span.innerHTML);
     if(span.innerHTML === "A" || span.innerHTML ===  "C"){
       span.classList.add("animate2")
       char++
     }else {  span.classList.add("animate");
       char++}
   if(char===(topText.length + bottomText.length)){
-    console.log(char);
-    complete();
+     complete();
     return;
   }
 }
@@ -91,3 +89,10 @@ function complete(){
   clearInterval(timer);
   timer=null;
 }
+
+setTimeout(function(){
+  const button = document.querySelectorAll(".btn")
+  for(i = 0; i < button.length; i++){
+    button[i].classList.add("btn2");
+  }
+},3000)
